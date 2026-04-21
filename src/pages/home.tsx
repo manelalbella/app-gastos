@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { Datatable } from "../components/data-table";
-import "./home.css";
+import { Chart } from "../components/chart";
 import { AddModal, type FormData } from "../components/add-modal";
+import "./home.css";
 
 export type Items = {
   id: string;
@@ -57,6 +58,10 @@ const Home = () => {
         <Datatable
           items={items}
           onDeleteItem={onDeleteItem}
+        />
+
+        <Chart
+          items={items}
         />
       </div>
       {showModal && (

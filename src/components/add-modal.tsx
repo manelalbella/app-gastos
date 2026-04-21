@@ -1,9 +1,8 @@
 import { useState, type SubmitEvent } from 'react';
 import { Modal } from 'react-responsive-modal';
+import { categories } from '../config';
 import 'react-responsive-modal/styles.css';
 import "./add-modal.css";
-
-const categories = ["Selecciona", "Facturas", "Ocio", "Suscripciones", "Comida"];
 
 export type FormData = {
   name: string;
